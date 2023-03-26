@@ -41,6 +41,11 @@ function ColorForm() {
       sixDigitsColor = color.hexValue.substring(0, 1) + color.hexValue.substring(1, 2) + color.hexValue.substring(1, 2) + color.hexValue.substring(2, 3) + color.hexValue.substring(2, 3) + color.hexValue.substring(3, 4) + color.hexValue.substring(3, 4);
     }
 
+    if(colors.find(c => c.hexValue === sixDigitsColor)) {
+      alert("This color already exists!");
+      return;
+    }
+
     if (color.hexValue.match(regexColorCheck)) {
       setColors([...colors, { hexValue: sixDigitsColor, isDefault: false }])
       localStorage.setItem('colors', JSON.stringify(colors));

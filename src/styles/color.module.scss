@@ -1,0 +1,25 @@
+@import './variables';
+
+.colorItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: $border-radius;
+    margin-bottom: 0.5rem;
+    background-color: $primary;
+    color: $accent;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    & > p {
+        background-color: rgb(43, 43, 43);
+        color: whitesmoke;
+        padding: 0.25rem;
+        border-radius: $border-radius;
+    }
+
+    & > button {
+        @include buttonStyle;
+    }
+}

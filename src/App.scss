@@ -1,0 +1,8 @@
+@import './styles/_variables.scss';
+
+.App {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  color: $font-color;
+}

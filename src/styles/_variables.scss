@@ -1,0 +1,29 @@
+$primary: #7286D3;
+$secondary: #8EA7E9;
+$accent: #E5E0FF;
+
+$font-color: #FFF2F2;
+$shadow: 0 0 2px 0px rgb(135, 135, 135);
+$border-radius: 0.25rem;
+
+@mixin inputStyle {
+    border: 3px solid $accent;
+    border-radius: $border-radius;
+    background-color: $secondary;
+    color: $font-color;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+@mixin buttonStyle {
+    border: 3px solid $secondary;
+    border-radius: $border-radius;
+    background-color: $primary;
+    color: $font-color;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    outline: none;
+    box-shadow: $shadow;
+}

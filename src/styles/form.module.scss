@@ -1,0 +1,15 @@
+@import './_variables.scss';
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > input[type=text] {
+        @include inputStyle;
+    } 
+
+    & > input[type=submit], input[type=reset] {
+        @include buttonStyle;
+    } 
+}
